@@ -18,7 +18,7 @@ def guess_game():
             case _ if guess < secret_number:
                 print("Nope, your guess is a bit low. Give it another shot!")
         
-    play_again = input("Do you want to play again (yes/no)").lower()
+    play_again = input("Do you want to play again (yes/no): ").lower()
     if play_again == "yes":
         guess_game()
     else:
