@@ -13,5 +13,5 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(square(-3), 9)
 
     def test_square_invalid(self):
-        with self.assertRaises(TypeError)
-        return "error"
+        with self.assertRaises(TypeError):
+            square("9")

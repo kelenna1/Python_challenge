@@ -16,8 +16,8 @@ class laptop:
         self.price = price
         self.brand = brand
 
-    def d_product(self):
-        return self.price + self.brand
+    def __str__(self):
+        return f"the name of the laptop is {self.name} and is priced at {self.price},becuase  it is a {self.brand}"
     
-product = laptop("")
-print(f"Total value of {product.name} in stock: ${product.d_product()}")
+product = laptop("Galaxy", "$1999", "Samsung")
+print(product)

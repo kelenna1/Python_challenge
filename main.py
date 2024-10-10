@@ -11,4 +11,4 @@ multiply_result = calculator.multiply(x, y)
 print(f"{x} * {y} = {multiply_result}")
 
 division_result = calculator.divide(x, y)
-print(f"{x} / {y} = {division_result}")
+print(f"{x} / {y} = {division_result:.2f}")
