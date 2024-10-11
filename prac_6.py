@@ -8,4 +8,3 @@ class Person:
     
 school = Person("John", "22")
 print(f"{school.student()}")
-
