@@ -16,9 +16,9 @@ def add_task(tasks):
 def remove_task(tasks):
     view_task(tasks)
     task_num = int(input("select a number to remove"))
-    if 0 < task_num < len(tasks):
-        remove = tasks.pop(task_num -1)
-        print(f"{remove}, has been removed from your list")
+    if 0 < task_num <= len(tasks):
+        removed = tasks.pop(task_num - 1)
+        print(f"{removed}, has been removed from your list")
     else:
         print("invalid input")
 
