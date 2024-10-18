@@ -40,16 +40,16 @@ def menu():
 
         match number:
             case 1:
-                contact = add_contact()
+                add_contact()
             case 2:
-                contact = search_contact()
+                search_contact()
             case 3:
-                contact = display_contact()
+                display_contact()
             case 4:
                 print("Exiting Contact Book. Goodbye!")
                 return
             case _:
                 print("Error!! enter a valid number between 1-4")
-                return
+                return menu()
             
 menu()
